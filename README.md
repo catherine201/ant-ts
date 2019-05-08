@@ -46,3 +46,13 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## config-overrides
 https://github.com/arackaf/customize-cra#available-plugins
+
+
+## Remark
+1. yarn run deploy (-- old or old)
+auto deploy to the server old is the argument
+
+2. **.module.less
+use of css module
+
+3.

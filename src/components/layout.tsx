@@ -1,5 +1,4 @@
 import React from 'react'
-import RouterConfig from '@/components/routerConfig.tsx'
 
 // export const App = (props: any) => {
 //   return (
@@ -11,8 +10,13 @@ import RouterConfig from '@/components/routerConfig.tsx'
 //   )
 // }
 
-export class App extends React.Component {
-  public render() {
-    return <RouterConfig />
+export default class Layout extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Layout</h1>
+        {/* {this.props.children || 'my affff'} */}
+      </div>
+    )
   }
 }
