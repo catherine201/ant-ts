@@ -31,5 +31,5 @@ const generateRoute = (routeConfig: any) => {
 const RouterConfig = () => {
   return <Router history={createHashHistory()}>{generateRoute(routeConfig)}</Router>
 }
-console.dir(RouterConfig)
-export default RouterConfig
+const ex = RouterConfig()
+export default ex
