@@ -1,18 +1,20 @@
 import React from 'react'
-import RouterConfig from '@/components/routerConfig.tsx'
+import { HashRouter as Router, Route } from 'react-router-dom'
+import GenerateRoute from '@/components/generateRoute.tsx'
+import routeConfig from '@/routes/index.js'
+import { Provider } from 'react-redux'
+import store from '@/store/index.js'
 
-// export const App = (props: any) => {
-//   return (
-//     <div>
-//       app
-//       <RouterConfig />
-//       {props.children}
-//     </div>
-//   )
-// }
+console.dir(<GenerateRoute config={routeConfig} />)
 
 export class App extends React.Component {
   public render() {
-    return <RouterConfig />
+    return (
+      <Provider store={store}>
+        <Router>
+          <GenerateRoute config={routeConfig} />
+        </Router>
+      </Provider>
+    )
   }
 }

@@ -1,20 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import WrappedRoute from '@/components/WrapRoute.js'
 
-const News = (props: any) => {
+const News = () => {
   return (
     <div>
       <h1>News</h1>
       <ul>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/admin/news/history">history</Link>
         </li>
         <li>
-          <Link to="/inbox">Inbox</Link>
+          <Link to="/admin/news/star">star</Link>
         </li>
       </ul>
-      {props.children}
     </div>
   )
 }
-export default News
+export default WrappedRoute(News)
