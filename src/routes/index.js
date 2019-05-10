@@ -10,7 +10,7 @@ const page = name =>
   })
 
 const Layout = Loadable({
-  loader: () => import(`@/components/layout.js`),
+  loader: () => import(`@/components/layout.tsx`),
   loading: Loading
 })
 const routeConfig = [

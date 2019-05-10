@@ -1,3 +1,4 @@
+@import './animate.css';
 /* reset */
 body,
 html,
@@ -81,4 +82,27 @@ body {
   font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
   background: #ecf0f5;
   box-sizing: border-box;
+}
+.middle-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(236, 240, 245);
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-block.btn-lg {
+  min-width: 200px;
+  height: 42px;
+  line-height: 42px;
+}
+.text-center {
+  text-align: center;
 }
