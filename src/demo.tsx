@@ -4,7 +4,6 @@ import styles from '@/App.module.less'
 import createApi from '@/api/registerAndLogin/index.js'
 import { getParams } from '@/utils/index.js'
 import { loading } from '@/api/axios.js'
-
 const selectOption = async () => {
   const [qianduanzhidian, FrontendMagazine] = await Promise.all([
     createApi.queryListCoins(),

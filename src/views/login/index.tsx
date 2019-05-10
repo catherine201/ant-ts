@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { withRouter } from 'react-router-dom'
+import { connect } from 'react-redux'
 
 const Login = (props: any) => {
   useEffect(() => {
@@ -33,4 +34,17 @@ const Login = (props: any) => {
     </div>
   )
 }
-export default withRouter(Login)
+
+const mapStateToProps = (state: any) => ({
+  test: state.demo.test
+})
+
+const mapDispatchToProps = (dispatch: any) => ({
+  getTest: dispatch.demo.getTest
+})
+export default withRouter(
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )(Login)
+)

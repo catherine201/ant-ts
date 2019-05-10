@@ -14,7 +14,8 @@
     "ordered-imports": false,
     "no-console": false,
     "jsx-no-lambda": false,
-    "jsx-no-multiline-js": false
+    "jsx-no-multiline-js": false,
+    "trailing-comma": false
   },
   "rulesDirectory": []
 }
