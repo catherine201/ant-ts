@@ -10,7 +10,7 @@ const Client = require('ssh2').Client
 const conn = new Client()
 conn
   .on('ready', () => {
-    // rm 删除dist文件，\n 是换行 换行执行 重启nginx命令 我这里是用docker重启nginx
+    // rm 删除dist文件，\n 是换行 换行执行 重启nginx命令
     conn.exec(`rm -rf ${server.path}\ncd /usr/sbin \n./nginx -s reload`, (err, stream) => {
       if (err) throw err
       stream
