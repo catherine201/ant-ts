@@ -55,4 +55,11 @@ auto deploy to the server old is the argument
 2. **.module.less
 use of css module
 
-3.
+3. route config
+all page need to insert route should be wrapped with HOC WrappedRoute
+example: export default WrappedRoute(News)
+
+4.withRouter
+all components which are not rendered by route direct can be wrapped with withRouter so that you can get location,match……properties
+
+

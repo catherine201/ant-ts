@@ -4,7 +4,6 @@ const NotMatch = () => {
   useEffect(() => {
     console.log('componentDidMount: 组件加载后')
     // loading.start()
-    //init()
     return () => {
       console.log('componentWillUnmount: 组件卸载， 做一些清理工作')
     }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
+import { withRouter } from 'react-router-dom'
 
-const Login = () => {
+const Login = (props: any) => {
   useEffect(() => {
     console.log('componentDidMount: 组件加载后')
     // loading.start()
@@ -16,6 +17,8 @@ const Login = () => {
 
   const handleLogin = () => {
     sessionStorage.setItem('isLogin', JSON.stringify(true))
+    console.log(props)
+    props.history.push('/admin')
   }
 
   return (
@@ -30,4 +33,4 @@ const Login = () => {
     </div>
   )
 }
-export default Login
+export default withRouter(Login)

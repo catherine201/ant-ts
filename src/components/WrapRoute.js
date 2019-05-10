@@ -5,16 +5,16 @@ import NotMatch from '@/views/notMatch/index.tsx'
 export default WrappedRoute => {
   class NewComponent extends Component {
     render() {
+      console.log(this.props)
+      const IsMatch = this.props.location.pathname !== this.props.match.url
       return (
         <div>
           <WrappedRoute />
           <Switch>
-            {this.props.routes
-              .map((route, i) => {
-                return <RouteWithSubRoutes key={i} {...route} />
-              })
-              .reverse()}
-            {<Route component={NotMatch} />}
+            {this.props.routes.map((route, i) => (
+              <RouteWithSubRoutes key={i} {...route} />
+            ))}
+            {IsMatch && <Route component={NotMatch} />}
           </Switch>
         </div>
       )
