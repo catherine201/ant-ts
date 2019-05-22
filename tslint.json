@@ -16,7 +16,8 @@
     "jsx-no-lambda": false,
     "jsx-no-multiline-js": false,
     "trailing-comma": false,
-    "no-useless-escape": false
+    "no-useless-escape": false,
+    "arrow-parens": false
   },
   "rulesDirectory": []
 }

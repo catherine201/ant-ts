@@ -5,7 +5,6 @@ const webpack = require('webpack')
 const zgipConfig = () => config => {
   config.plugins.push(
     new CompressionPlugin({
-      // asset: "[path].gz[query]",
       filename: '[path].gz[query]',
       algorithm: 'gzip',
       test: /\.(js|html|css|jsx)$/,

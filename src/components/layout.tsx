@@ -1,7 +1,11 @@
 import React from 'react'
 import WrappedRoute from './WrapRoute.js'
 import { withRouter } from 'react-router-dom'
-const Layout = (props: any) => {
+
+interface Props {
+  history: any
+}
+const Layout: React.FC<Props> = props => {
   const logOut = () => {
     console.log(props)
     sessionStorage.clear()

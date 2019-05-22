@@ -169,8 +169,6 @@ export function fetchApi(url, options, data) {
   if (headers['Content-Type'] === 'application/x-www-form-urlencoded') {
     data = qs.stringify(data)
   }
-  console.log(params)
-  console.log(data)
   // let params = qs.stringify(data)
   const ajaxObj = {
     baseURL,
