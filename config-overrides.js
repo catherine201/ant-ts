@@ -15,6 +15,11 @@ const zgipConfig = () => config => {
   return config
 }
 // process.argv.splice(2)[0] ||
+// const revisePathConfig = () => config => {
+//   config.output.publicPath = '' // 默认是’/‘ 这里改成你想要的
+//   return config
+// }
+
 const argvConfig = () => config => {
   config.plugins.push(
     new webpack.DefinePlugin({
@@ -37,4 +42,5 @@ module.exports = override(
   addWebpackAlias({ '@': path.resolve(__dirname, 'src') }),
   argvConfig(),
   zgipConfig()
+  // revisePathConfig()
 )

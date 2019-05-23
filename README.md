@@ -43,23 +43,26 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-
 ## config-overrides
+
 https://github.com/arackaf/customize-cra#available-plugins
 
-
 ## Remark
-1. yarn run deploy (-- old or old)
-auto deploy to the server old is the argument
 
-2. **.module.less
-use of css module
+1. yarn run deploy (-- old or old)
+   auto deploy to the server old is the argument
+
+2. \*\*.module.less
+   use of css module
 
 3. route config
-all page need to insert route should be wrapped with HOC WrappedRoute
-example: export default WrappedRoute(News)
+   all page need to insert route should be wrapped with HOC WrappedRoute
+   example: export default WrappedRoute(News)
 
 4.withRouter
 all components which are not rendered by route direct can be wrapped with withRouter so that you can get location,match……properties
 
-
+5.docker
+./bin/compose up -d like start
+./bin/compose logs nginx  
+./bin/compose down like stop
