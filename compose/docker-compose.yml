@@ -7,7 +7,7 @@ version: '3'
 #
 services:
   node:
-    build: dockers/node/
+    build: dockers/node/Dockerfile
     volumes:
       - .:/usr/src/app
   nginx:
