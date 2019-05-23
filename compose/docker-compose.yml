@@ -12,8 +12,6 @@ services:
       - .:/usr/src/app
   nginx:
     image: nginx
-    networks:
-      - frontend
     volumes:
       - ../build/:/usr/share/nginx/html/
       - ../nginx/default.conf:/etc/nginx/conf.d/default.conf
