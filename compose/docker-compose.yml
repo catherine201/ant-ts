@@ -18,4 +18,4 @@ services:
     depends_on:
       - node
     ports:
-      - 3000:80
+      - 3030:80
