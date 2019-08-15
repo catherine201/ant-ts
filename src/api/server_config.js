@@ -4,7 +4,8 @@ function resolveIp() {
     return {
       login: '/log',
       logic: '/fangman',
-      another: '/hahha'
+      another: '/hahha',
+      test: '/test'
     }
   }
   return process.env.ENV_RGV === 'old'
